@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>My Shop</title>
+</head>
+
+<body>
+    <header id="header">
+        <a href="#"><img src="img/logo.png" alt="png"> </a>
+        <nav>
+            <ul id="navBar">
+                <li><a class="active" href="index.html">Home </a></li>
+                <li><a href="shop.html"> Shop</a></li>
+                <li><a href="blog.html"> Blog</a></li>
+                <li><a href="about.html">About </a></li>
+                <li><a href="contact.html"> Contact Us</a></li>
+                <li><button id="shopCart" onclick="renderCard()"> <i class="fa-solid fa-bag-shopping"
+                            style="color: #000000;"></i></button>
+                </li>
+                <a href="#" id="close"> <i class="fa-regular fa-circle-xmark" style="color: #000000;"></i> </a>
+            </ul>
+            <div class="mobile">
+                <i id="bar" class="fa-solid fa-bars" style="color: #000000;"></i>
+            </div>
+        </nav>
+        <div class="cartTap" id="cart-tap">
+            <h5> Shopping Cart</h5>
+            <div class="list-cart">
+                <div class="item">
+                    <div class="image">
+                        <img src="img/products/f1.jpg" alt="">
+                    </div>
+                    <div class="name">
+                        NAME
+                    </div>
+                    <div class="totalPrice">
+                        200$
+                    </div>
+                    <div class="quantity">
+                        <span class="minus">-</span>
+                        <span>1</span>
+                        <span class="plus">+</span>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-cart">
+                <button id="btn-close">CLOSE </button>
+                <button id="checkOut">CHECK </button>
+            </div>
+        </div>
+    </header>
+    <section id="hero">
+        <h4 style=" color:#000000">Trade-in-offer</h4>
+        <h2>Super value deals</h2>
+        <h1>On all products</h1>
+        <p>Save more with coupons & Get up to 50</p>
+        <button>Shop Now</button>
+
+    </section>
+    <section id="feature" class="section-p1">
+        <div class="card">
+            <img src="img/features/f1.png" alt="">
+            <h6>Free shipping </h6>
+        </div>
+        <div class="card">
+            <img src="img/features/f2.png" alt="">
+            <h6>Online Order </h6>
+        </div>
+        <div class="card">
+            <img src="img/features/f3.png" alt="">
+            <h6>Save Money </h6>
+        </div>
+        <div class="card">
+            <img src="img/features/f4.png" alt="">
+            <h6>Promotions</h6>
+        </div>
+        <div class="card">
+            <img src="img/features/f5.png" alt="">
+            <h6>Happy Sell </h6>
+        </div>
+        <div class="card">
+            <img src="img/features/f6.png" alt="">
+            <h6>24/7 Support </h6>
+        </div>
+    </section>
+    <section id="product1" class="section-p1">
+        <h2>Featured Products</h2>
+        <p>Summer Collection New Modern Design</p>
+        <div class="pro-container">
+            <div class="card-product">
+                <div class="card-top">
+                    <img src="img/products/f1.jpg" alt="png" />
+                </div>
+                <div class="card-body">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <h4>$90.00</h4>
+                    <button onclick="saveToLocalStorage()"> <i class="fa-solid fa-cart-arrow-down cart"></i></button>
+                </div>
+            </div>
+            <div class="card-product">
+                <div class="card-top">
+                    <img src="img/products/f2.jpg" alt="png" />
+                </div>
+                <div class="card-body">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <h4>$90.00</h4>
+                    <button href="#"> <i class="fa-solid fa-cart-arrow-down cart"></i></a>
+                </div>
+            </div>
+            <div class="card-product">
+                <div class="card-top">
+                    <img src="img/products/f3.jpg" alt="png" />
+                </div>
+                <div class="card-body">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <h4>$90.00</h4>
+                    <button href="#"> <i class="fa-solid fa-cart-arrow-down cart"></i></button>
+                </div>
+            </div>
+            <div class="card-product">
+                <div class="card-top">
+                    <img src="img/products/f5.jpg" alt="png" />
+                </div>
+                <div class="card-body">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <h4>$90.00</h4>
+                    <button href="#"> <i class="fa-solid fa-cart-arrow-down cart"></i></a>
+                </div>
+            </div>
+            <div class="card-product">
+                <div class="card-top">
+                    <img src="img/products/f6.jpg" alt="png" />
+                </div>
+                <div class="card-body">
+                    <span>adidas</span>
+                    <h5> Shirts</h5>
+                    <div class="star">
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <h4>$140.00</h4>
+                    <button href="#"> <i class="fa-solid fa-cart-arrow-down cart"></i></button>
+                </div>
+            </div>
+            <div class="card-product">
+                <div class="card-top">
+                    <img src="img/products/f7.jpg" alt="png" />
+                </div>
+                <div class="card-body">
+                    <span>adidas</span>
+                    <h5>Baggy Pants</h5>
+                    <div class="star">
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <h4>$110.00</h4>
+                    <button href="#"> <i class="fa-solid fa-cart-arrow-down cart"></i></a>
+                </div>
+            </div>
+            <div class="card-product">
+                <div class="card-top">
+                    <img src="img/products/f8.jpg" alt="png" />
+                </div>
+                <div class="card-body">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <h4>$120.00</h4>
+                    <button href="#"> <i class="fa-solid fa-cart-arrow-down cart"></i></button>
+                </div>
+            </div>
+            <div class="card-product">
+                <div class="card-top">
+                    <img src="img/products/f4.jpg" alt="png" />
+                </div>
+                <div class="card-body">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <h4>$90.00</h4>
+                    <button href="#"> <i class="fa-solid fa-cart-arrow-down cart"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section id="panner1" class="section-m1">
+        <div class="container panner1 section-p1 ">
+            <h4 style="color: #fff;">Repair Services</h4>
+            <h2>Up to <span class="off">70% Off</span> - All t-Shirts & Accessories</h2>
+            <button type="button" class="btn">Explore More</button>
+        </div>
+    </section>
+    <section id="new-arrival" class="section-m1 section-p1">
+        <h2>New Arrivals</h2>
+        <p> Summer Collection New Modern Design</p>
+        <div class="pro-container">
+            <div class="card-product">
+                <div class="card-top">
+                    <img src="img/products/n1.jpg" alt="png" />
+                </div>
+                <div class="card-body">
+                    <span>adidas</span>
+                    <h5>Baby Blue Shirts</h5>
+                    <div class="star">
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <h4>$95.00</h4>
+                    <button href="#"> <i class="fa-solid fa-cart-arrow-down cart"></i></a>
+                </div>
+            </div>
+            <div class="card-product">
+                <div class="card-top">
+                    <img src="img/products/n2.jpg" alt="png" />
+                </div>
+                <div class="card-body">
+                    <span>adidas</span>
+                    <h5>Gray Shirts</h5>
+                    <div class="star">
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <h4>$90.00</h4>
+                    <button href="#"> <i class="fa-solid fa-cart-arrow-down cart"></i></a>
+                </div>
+            </div>
+            <div class="card-product">
+                <div class="card-top">
+                    <img src="img/products/n3.jpg" alt="png" />
+                </div>
+                <div class="card-body">
+                    <span>adidas</span>
+                    <h5>White Shirts</h5>
+                    <div class="star">
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <h4>$110.00</h4>
+                    <button href="#"> <i class="fa-solid fa-cart-arrow-down cart"></i></a>
+                </div>
+            </div>
+            <div class="card-product">
+                <div class="card-top">
+                    <img src="img/products/n4.jpg" alt="png" />
+                </div>
+                <div class="card-body">
+                    <span>adidas</span>
+                    <h5>Shirts</h5>
+                    <div class="star">
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <h4>$70.00</h4>
+                    <button href="#"> <i class="fa-solid fa-cart-arrow-down cart"></i></a>
+                </div>
+            </div>
+            <div class="card-product">
+                <div class="card-top">
+                    <img src="img/products/n5.jpg" alt="png" />
+                </div>
+                <div class="card-body">
+                    <span>adidas</span>
+                    <h5> Jeans Shirts</h5>
+                    <div class="star">
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <h4>$100.00</h4>
+                    <button href="#"> <i class="fa-solid fa-cart-arrow-down cart"></i></a>
+                </div>
+            </div>
+            <div class="card-product">
+                <div class="card-top">
+                    <img src="img/products/n6.jpg" alt="png" />
+                </div>
+                <div class="card-body">
+                    <span>adidas</span>
+                    <h5>Classic Shorts </h5>
+                    <div class="star">
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <h4>$110.00</h4>
+                    <button href="#"> <i class="fa-solid fa-cart-arrow-down cart"></i></a>
+                </div>
+            </div>
+            <div class="card-product">
+                <div class="card-top">
+                    <img src="img/products/n7.jpg" alt="png" />
+                </div>
+                <div class="card-body">
+                    <span>adidas</span>
+                    <h5>Beige Shirts</h5>
+                    <div class="star">
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <h4>$90.00</h4>
+                    <button href="#"> <i class="fa-solid fa-cart-arrow-down cart"></i></a>
+                </div>
+            </div>
+            <div class="card-product">
+                <div class="card-top">
+                    <img src="img/products/n8.jpg" alt="png" />
+                </div>
+                <div class="card-body">
+                    <span>adidas</span>
+                    <h5>Shirts</h5>
+                    <div class="star">
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <h4>$90.00</h4>
+                    <button href="#"> <i class="fa-solid fa-cart-arrow-down cart"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section id="panner2" class="section-p1">
+        <div class="banner-box">
+            <h4>crazy deals</h4>
+            <h2>buy 1 get 1 free</h2>
+            <span>The best classic dress is on sale at cara</span>
+            <button class="btn-outline">Learn More</button>
+        </div>
+        <div class="banner-box box-2">
+            <h4>spring / summer</h4>
+            <h2>upcomming soon</h2>
+            <span>The best sale at cara</span>
+            <button class="btn-outline">Collection</button>
+        </div>
+
+    </section>
+    <section id="panner3" class="section-p1">
+        <div class="banner-box box-3 ">
+            <h2>SEASONAL SALE</h2>
+            <h3>Winter Collection -50% OFF</h3>
+        </div>
+        <div class="banner-box box-4 ">
+            <h2>NEW COLLECTION</h2>
+            <h3>spring / summer</h3>
+        </div>
+        <div class="banner-box box-5 ">
+            <h2>T-SHIRTS</h2>
+            <h3>New Trendy Print </h3>
+        </div>
+    </section>
+    <section>
+        <section id="new-sletters" class="newsletter section-p1">
+            <div class="newsletter-text">
+                <h3>Sing Up For Newsletter</h3>
+                <h4>Get E-mail updates about our latest shop and <span> special offers!</span> </h4>
+            </div>
+            <div class="form">
+                <input type="email" placeholder="Your Email" />
+                <button>Sing Up</button>
+            </div>
+        </section>
+    </section>
+    <footer class="section-p1">
+        <div class="footer">
+            <div class="col-1">
+                <img src="img/logo.png" alt="">
+                <ul>
+                    <li>Contact</li>
+                    <li>
+                        <span>Address: <span class="foot-col"> El mashaya street , El Mansoura city.</span> </span> <br>
+                        <span>Phone: <span class="foot-col"> +1154465656</span> </span> <br>
+                        <span>Hours :<span class="foot-col"> 10:00 - 18:00 Mon - Sat </span></span> <br>
+                    </li>
+                    <li class="foot-links">Follow Us On <br>
+                        <br>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-2">
+                <h3>About us</h3>
+                <ul>
+                    <li><a href="#">About Us </a></li>
+                    <li><a href="#">Delivery information </a></li>
+                    <li><a href="#"> Contact Us</a></li>
+                    <li><a href="#">Terms & Conditions </a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="col-2">
+                <h3>My Acount</h3>
+                <ul>
+                    <li><a href="#">Sing In </a></li>
+                    <li><a href="#">View Cart </a></li>
+                    <li><a href="#">My WishList</a></li>
+                    <li><a href="#">Track My Order </a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </div>
+            <div class="col-2">
+                <h3>Install App</h3>
+                <ul>
+                    <li><a href="#">From App store OR Google play</a></li>
+                    <li>
+                        <button class="app"><img src="img/pay/app.jpg" alt=""></button>
+                        <button class="app"> <img src="img/pay/play.jpg" alt=""> </button>
+
+                    </li>
+                    <li><a href="#">Secured Payment Gateway </a></li>
+                    <li><img src="img/pay/pay.png" alt=""></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <div class="copy section-p1">
+                &copy; 2024 All Rights Reserved | Implemented by <span> Zeyad Ashraf </span>
+            </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
